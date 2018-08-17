@@ -1,95 +1,385 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  
+
+
+
+
+
+
+
+
+
+
+
 
   
-  <title>firstBlog | 淡淡de天秤</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+<html class="theme-next gemini use-motion" lang="zh-CN">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=6.4.0" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=6.4.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=6.4.0">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=6.4.0">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=6.4.0" color="#222">
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '6.4.0',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
   <meta name="description" content="《后端架构师技术图谱》   数据结构 队列 集合 链表、数组 字典、关联数组 栈 树 二叉树 完全二叉树 平衡二叉树 二叉查找树（BST） 红黑树 B-，B+，B*树 LSM 树   BitSet   常用算法 排序、查找算法 选择排序 冒泡排序 插入排序 快速排序 归并排序 希尔排序 堆排序 计数排序 桶排序 基数排序 二分查找 Java 中的排序工具   布隆过滤器 字符串比较 KMP 算法">
 <meta name="keywords" content="cc,linux,mac,python">
 <meta property="og:type" content="article">
 <meta property="og:title" content="firstBlog">
 <meta property="og:url" content="http://yoursite.com/firstBlog.html">
-<meta property="og:site_name" content="淡淡de天秤">
+<meta property="og:site_name" content="活人的博客">
 <meta property="og:description" content="《后端架构师技术图谱》   数据结构 队列 集合 链表、数组 字典、关联数组 栈 树 二叉树 完全二叉树 平衡二叉树 二叉查找树（BST） 红黑树 B-，B+，B*树 LSM 树   BitSet   常用算法 排序、查找算法 选择排序 冒泡排序 插入排序 快速排序 归并排序 希尔排序 堆排序 计数排序 桶排序 基数排序 二分查找 Java 中的排序工具   布隆过滤器 字符串比较 KMP 算法">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-07-28T03:27:24.843Z">
+<meta property="og:updated_time" content="2018-07-28T03:27:24.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="firstBlog">
 <meta name="twitter:description" content="《后端架构师技术图谱》   数据结构 队列 集合 链表、数组 字典、关联数组 栈 树 二叉树 完全二叉树 平衡二叉树 二叉查找树（BST） 红黑树 B-，B+，B*树 LSM 树   BitSet   常用算法 排序、查找算法 选择排序 冒泡排序 插入排序 快速排序 归并排序 希尔排序 堆排序 计数排序 桶排序 基数排序 二分查找 Java 中的排序工具   布隆过滤器 字符串比较 KMP 算法">
+
+
+
+
+
+
+  <link rel="canonical" href="http://yoursite.com/firstBlog.html"/>
+
+
+
+<script type="text/javascript" id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>firstBlog | 活人的博客</title>
   
-    <link rel="alternate" href="/atom.xml" title="淡淡de天秤" type="application/atom+xml">
-  
-  
-    <link rel="icon" href="/favicon.png">
-  
-  
-    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
-  
-  <link rel="stylesheet" href="/css/style.css">
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style type="text/css">
+    .use-motion .motion-element,
+    .use-motion .brand,
+    .use-motion .menu-item,
+    .sidebar-inner,
+    .use-motion .post-block,
+    .use-motion .pagination,
+    .use-motion .comments,
+    .use-motion .post-header,
+    .use-motion .post-body,
+    .use-motion .collection-title { opacity: initial; }
+
+    .use-motion .logo,
+    .use-motion .site-title,
+    .use-motion .site-subtitle {
+      opacity: initial;
+      top: initial;
+    }
+
+    .use-motion {
+      .logo-line-before i { left: initial; }
+      .logo-line-after i { right: initial; }
+    }
+  </style>
+</noscript>
+
 </head>
 
-<body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">淡淡de天秤</a>
-      </h1>
-      
-        <h2 id="subtitle-wrap">
-          <a href="/" id="subtitle">cc</a>
-        </h2>
-      
-    </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
-        
-          <a class="main-nav-link" href="/">Home</a>
-        
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
-        
-        <a id="nav-search-btn" class="nav-icon" title="搜索"></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
-      </div>
-    </div>
-  </div>
-</header>
-      <div class="outer">
-        <section id="main"><article id="post-firstBlog" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/firstBlog.html" class="article-date">
-  <time datetime="2018-07-28T02:59:52.000Z" itemprop="datePublished">2018-07-28</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+
   
-    <h1 class="article-title" itemprop="name">
-      firstBlog
-    </h1>
+  
+    
   
 
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">活人的博客</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+      
+        <p class="site-subtitle">不在他处，正是此地。</p>
+      
+    
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="切换导航栏">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home">
+    <a href="/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-home"></i> <br />首页</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-tags">
+    <a href="/tags/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />标签</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-categories">
+    <a href="/categories/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-th"></i> <br />分类</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+    <a href="/archives/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />归档</a>
+  </li>
+
+      
+      
+    </ul>
+  
+
+  
+
+  
+</nav>
+
+
+
+  
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+            
+
+          
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/firstBlog.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="chen chen">
+      <meta itemprop="description" content="MyBlog">
+      <meta itemprop="image" content="https://ws2.sinaimg.cn/large/006tNbRwgy1fud1hpo3a7j30ku0ov7mj.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="活人的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">firstBlog
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2018-07-28 10:59:52 / 修改时间：11:27:24" itemprop="dateCreated datePublished" datetime="2018-07-28T10:59:52+08:00">2018-07-28</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
       </header>
     
-    <div class="article-entry" itemprop="articleBody">
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
       
         <h1>《后端架构师技术图谱》</h1>
 
@@ -2733,101 +3023,362 @@
 
       
     </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/firstBlog.html" data-id="cjk4v1rnr0001i70ygusck8f8" class="article-share-link">Share</a>
+
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/hello-world.html" rel="next" title="Hello World">
+                <i class="fa fa-chevron-left"></i> Hello World
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
       
       
     </footer>
   </div>
   
-    
-<nav id="article-nav">
   
   
-    <a href="/hello-world.html" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">Hello World</div>
-    </a>
-  
-</nav>
+  </article>
 
-  
-</article>
 
-</section>
-        
-          <aside id="sidebar">
-  
-    
-
-  
-    
-
-  
-    
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">归档</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/07/">七月 2018</a></li></ul>
-    </div>
   </div>
 
 
+          </div>
+          
+
   
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">最新文章</h3>
-    <div class="widget">
-      <ul>
+
+
+
+        </div>
         
-          <li>
-            <a href="/firstBlog.html">firstBlog</a>
-          </li>
-        
-          <li>
-            <a href="/hello-world.html">Hello World</a>
-          </li>
-        
-      </ul>
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
     </div>
   </div>
 
-  
-</aside>
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="https://ws2.sinaimg.cn/large/006tNbRwgy1fud1hpo3a7j30ku0ov7mj.jpg"
+                alt="chen chen" />
+            
+              <p class="site-author-name" itemprop="name">chen chen</p>
+              <p class="site-description motion-element" itemprop="description">MyBlog</p>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">2</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+
+              
+            </nav>
+          
+
+          
+
+          
+            <div class="links-of-author motion-element">
+              
+                <span class="links-of-author-item">
+                  <a href="https://github.com/ccpdhs" target="_blank" title="GitHub"><i class="fa fa-fw fa-github"></i>GitHub</a>
+                  
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="mailto:ccpdhs@gmail.com" target="_blank" title="E-Mail"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  
+                </span>
+              
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+            
+          
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">1.</span> <span class="nav-text">《后端架构师技术图谱》</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#数据结构"><span class="nav-number">2.</span> <span class="nav-text">数据结构</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#队列"><span class="nav-number">2.1.</span> <span class="nav-text">队列</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#集合"><span class="nav-number">2.2.</span> <span class="nav-text">集合</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#链表、数组"><span class="nav-number">2.3.</span> <span class="nav-text">链表、数组</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#字典、关联数组"><span class="nav-number">2.4.</span> <span class="nav-text">字典、关联数组</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#栈"><span class="nav-number">2.5.</span> <span class="nav-text">栈</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#树"><span class="nav-number">2.6.</span> <span class="nav-text">树</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#二叉树"><span class="nav-number">2.6.1.</span> <span class="nav-text">二叉树</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#完全二叉树"><span class="nav-number">2.6.2.</span> <span class="nav-text">完全二叉树</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#平衡二叉树"><span class="nav-number">2.6.3.</span> <span class="nav-text">平衡二叉树</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#二叉查找树（BST）"><span class="nav-number">2.6.4.</span> <span class="nav-text">二叉查找树（BST）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#红黑树"><span class="nav-number">2.6.5.</span> <span class="nav-text">红黑树</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#B-，B-，B-树"><span class="nav-number">2.6.6.</span> <span class="nav-text">B-，B+，B*树</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#LSM-树"><span class="nav-number">2.6.7.</span> <span class="nav-text">LSM 树</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#BitSet"><span class="nav-number">2.7.</span> <span class="nav-text">BitSet</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#常用算法"><span class="nav-number">3.</span> <span class="nav-text">常用算法</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#排序、查找算法"><span class="nav-number">3.1.</span> <span class="nav-text">排序、查找算法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#选择排序"><span class="nav-number">3.1.1.</span> <span class="nav-text">选择排序</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#冒泡排序"><span class="nav-number">3.1.2.</span> <span class="nav-text">冒泡排序</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#插入排序"><span class="nav-number">3.1.3.</span> <span class="nav-text">插入排序</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#快速排序"><span class="nav-number">3.1.4.</span> <span class="nav-text">快速排序</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#归并排序"><span class="nav-number">3.1.5.</span> <span class="nav-text">归并排序</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#希尔排序"><span class="nav-number">3.1.6.</span> <span class="nav-text">希尔排序</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#堆排序"><span class="nav-number">3.1.7.</span> <span class="nav-text">堆排序</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#计数排序"><span class="nav-number">3.1.8.</span> <span class="nav-text">计数排序</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#桶排序"><span class="nav-number">3.1.9.</span> <span class="nav-text">桶排序</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#基数排序"><span class="nav-number">3.1.10.</span> <span class="nav-text">基数排序</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#二分查找"><span class="nav-number">3.1.11.</span> <span class="nav-text">二分查找</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Java-中的排序工具"><span class="nav-number">3.1.12.</span> <span class="nav-text">Java 中的排序工具</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#布隆过滤器"><span class="nav-number">3.2.</span> <span class="nav-text">布隆过滤器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#字符串比较"><span class="nav-number">3.3.</span> <span class="nav-text">字符串比较</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#KMP-算法"><span class="nav-number">3.3.1.</span> <span class="nav-text">KMP 算法</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#深度优先、广度优先"><span class="nav-number">3.4.</span> <span class="nav-text">深度优先、广度优先</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#贪心算法"><span class="nav-number">3.5.</span> <span class="nav-text">贪心算法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#回溯算法"><span class="nav-number">3.6.</span> <span class="nav-text">回溯算法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#剪枝算法"><span class="nav-number">3.7.</span> <span class="nav-text">剪枝算法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#动态规划"><span class="nav-number">3.8.</span> <span class="nav-text">动态规划</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#朴素贝叶斯"><span class="nav-number">3.9.</span> <span class="nav-text">朴素贝叶斯</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#推荐算法"><span class="nav-number">3.10.</span> <span class="nav-text">推荐算法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#最小生成树算法"><span class="nav-number">3.11.</span> <span class="nav-text">最小生成树算法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#最短路径算法"><span class="nav-number">3.12.</span> <span class="nav-text">最短路径算法</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#并发"><span class="nav-number">4.</span> <span class="nav-text">并发</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Java-并发"><span class="nav-number">4.1.</span> <span class="nav-text">Java 并发</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#多线程"><span class="nav-number">4.2.</span> <span class="nav-text">多线程</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#线程安全"><span class="nav-number">4.3.</span> <span class="nav-text">线程安全</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#一致性、事务"><span class="nav-number">4.4.</span> <span class="nav-text">一致性、事务</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#事务-ACID-特性"><span class="nav-number">4.4.1.</span> <span class="nav-text">事务 ACID 特性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#事务的隔离级别"><span class="nav-number">4.4.2.</span> <span class="nav-text">事务的隔离级别</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#MVCC"><span class="nav-number">4.4.3.</span> <span class="nav-text">MVCC</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#锁"><span class="nav-number">4.5.</span> <span class="nav-text">锁</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Java中的锁和同步类"><span class="nav-number">4.5.1.</span> <span class="nav-text">Java中的锁和同步类</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#公平锁-amp-非公平锁"><span class="nav-number">4.5.2.</span> <span class="nav-text">公平锁 &amp; 非公平锁</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#悲观锁"><span class="nav-number">4.5.3.</span> <span class="nav-text">悲观锁</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#乐观锁-amp-CAS"><span class="nav-number">4.5.4.</span> <span class="nav-text">乐观锁 &amp; CAS</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#ABA-问题"><span class="nav-number">4.5.5.</span> <span class="nav-text">ABA 问题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#CopyOnWrite容器"><span class="nav-number">4.5.6.</span> <span class="nav-text">CopyOnWrite容器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#RingBuffer"><span class="nav-number">4.5.7.</span> <span class="nav-text">RingBuffer</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#可重入锁-amp-不可重入锁"><span class="nav-number">4.5.8.</span> <span class="nav-text">可重入锁 &amp; 不可重入锁</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#互斥锁-amp-共享锁"><span class="nav-number">4.5.9.</span> <span class="nav-text">互斥锁 &amp; 共享锁</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#死锁"><span class="nav-number">4.5.10.</span> <span class="nav-text">死锁</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#操作系统"><span class="nav-number">5.</span> <span class="nav-text">操作系统</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#计算机原理"><span class="nav-number">5.1.</span> <span class="nav-text">计算机原理</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#CPU"><span class="nav-number">5.2.</span> <span class="nav-text">CPU</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#多级缓存"><span class="nav-number">5.2.1.</span> <span class="nav-text">多级缓存</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#进程"><span class="nav-number">5.3.</span> <span class="nav-text">进程</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#线程"><span class="nav-number">5.4.</span> <span class="nav-text">线程</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#协程"><span class="nav-number">5.5.</span> <span class="nav-text">协程</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Linux"><span class="nav-number">5.6.</span> <span class="nav-text">Linux</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#设计模式"><span class="nav-number">6.</span> <span class="nav-text">设计模式</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#设计模式的六大原则"><span class="nav-number">6.1.</span> <span class="nav-text">设计模式的六大原则</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#23种常见设计模式"><span class="nav-number">6.2.</span> <span class="nav-text">23种常见设计模式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#应用场景"><span class="nav-number">6.3.</span> <span class="nav-text">应用场景</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#单例模式"><span class="nav-number">6.4.</span> <span class="nav-text">单例模式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#责任链模式"><span class="nav-number">6.5.</span> <span class="nav-text">责任链模式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#MVC"><span class="nav-number">6.6.</span> <span class="nav-text">MVC</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#IOC"><span class="nav-number">6.7.</span> <span class="nav-text">IOC</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#AOP"><span class="nav-number">6.8.</span> <span class="nav-text">AOP</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#UML"><span class="nav-number">6.9.</span> <span class="nav-text">UML</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#微服务思想"><span class="nav-number">6.10.</span> <span class="nav-text">微服务思想</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#康威定律"><span class="nav-number">6.10.1.</span> <span class="nav-text">康威定律</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#运维-amp-统计-amp-技术支持"><span class="nav-number">7.</span> <span class="nav-text">运维 &amp; 统计 &amp; 技术支持</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#常规监控"><span class="nav-number">7.1.</span> <span class="nav-text">常规监控</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#APM"><span class="nav-number">7.2.</span> <span class="nav-text">APM</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#统计分析"><span class="nav-number">7.3.</span> <span class="nav-text">统计分析</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#持续集成-CI-CD"><span class="nav-number">7.4.</span> <span class="nav-text">持续集成(CI/CD)</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Jenkins"><span class="nav-number">7.4.1.</span> <span class="nav-text">Jenkins</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#环境分离"><span class="nav-number">7.4.2.</span> <span class="nav-text">环境分离</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#自动化运维"><span class="nav-number">7.5.</span> <span class="nav-text">自动化运维</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Ansible"><span class="nav-number">7.5.1.</span> <span class="nav-text">Ansible</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#puppet"><span class="nav-number">7.5.2.</span> <span class="nav-text">puppet</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#chef"><span class="nav-number">7.5.3.</span> <span class="nav-text">chef</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#测试"><span class="nav-number">7.6.</span> <span class="nav-text">测试</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#TDD-理论"><span class="nav-number">7.6.1.</span> <span class="nav-text">TDD 理论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#单元测试"><span class="nav-number">7.6.2.</span> <span class="nav-text">单元测试</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#压力测试"><span class="nav-number">7.6.3.</span> <span class="nav-text">压力测试</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#全链路压测"><span class="nav-number">7.6.4.</span> <span class="nav-text">全链路压测</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#A-B-、灰度、蓝绿测试"><span class="nav-number">7.6.5.</span> <span class="nav-text">A/B 、灰度、蓝绿测试</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#虚拟化"><span class="nav-number">7.7.</span> <span class="nav-text">虚拟化</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#KVM"><span class="nav-number">7.7.1.</span> <span class="nav-text">KVM</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Xen"><span class="nav-number">7.7.2.</span> <span class="nav-text">Xen</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#OpenVZ"><span class="nav-number">7.7.3.</span> <span class="nav-text">OpenVZ</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#容器技术"><span class="nav-number">7.8.</span> <span class="nav-text">容器技术</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Docker"><span class="nav-number">7.8.1.</span> <span class="nav-text">Docker</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#云技术"><span class="nav-number">7.9.</span> <span class="nav-text">云技术</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#OpenStack"><span class="nav-number">7.9.1.</span> <span class="nav-text">OpenStack</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#DevOps"><span class="nav-number">7.10.</span> <span class="nav-text">DevOps</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#文档管理"><span class="nav-number">7.11.</span> <span class="nav-text">文档管理</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#中间件"><span class="nav-number">8.</span> <span class="nav-text">中间件</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Web-Server"><span class="nav-number">8.1.</span> <span class="nav-text">Web Server</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Nginx"><span class="nav-number">8.1.1.</span> <span class="nav-text">Nginx</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#OpenResty"><span class="nav-number">8.1.2.</span> <span class="nav-text">OpenResty</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Apache-Httpd"><span class="nav-number">8.1.3.</span> <span class="nav-text">Apache Httpd</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Tomcat"><span class="nav-number">8.1.4.</span> <span class="nav-text">Tomcat</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#架构原理"><span class="nav-number">8.1.4.1.</span> <span class="nav-text">架构原理</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#调优方案"><span class="nav-number">8.1.4.2.</span> <span class="nav-text">调优方案</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Jetty"><span class="nav-number">8.1.5.</span> <span class="nav-text">Jetty</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#缓存"><span class="nav-number">8.2.</span> <span class="nav-text">缓存</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#本地缓存"><span class="nav-number">8.2.1.</span> <span class="nav-text">本地缓存</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#客户端缓存"><span class="nav-number">8.3.</span> <span class="nav-text">客户端缓存</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#服务端缓存"><span class="nav-number">8.4.</span> <span class="nav-text">服务端缓存</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Web缓存"><span class="nav-number">8.4.1.</span> <span class="nav-text">Web缓存</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Memcached"><span class="nav-number">8.4.2.</span> <span class="nav-text">Memcached</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Redis"><span class="nav-number">8.4.3.</span> <span class="nav-text">Redis</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#架构"><span class="nav-number">8.4.3.1.</span> <span class="nav-text">架构</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#回收策略"><span class="nav-number">8.4.3.2.</span> <span class="nav-text">回收策略</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Tair"><span class="nav-number">8.4.4.</span> <span class="nav-text">Tair</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#消息队列"><span class="nav-number">8.5.</span> <span class="nav-text">消息队列</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#消息总线"><span class="nav-number">8.5.1.</span> <span class="nav-text">消息总线</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#消息的顺序"><span class="nav-number">8.5.2.</span> <span class="nav-text">消息的顺序</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#RabbitMQ"><span class="nav-number">8.5.3.</span> <span class="nav-text">RabbitMQ</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#RocketMQ"><span class="nav-number">8.5.4.</span> <span class="nav-text">RocketMQ</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#ActiveMQ"><span class="nav-number">8.5.5.</span> <span class="nav-text">ActiveMQ</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Kafka"><span class="nav-number">8.5.6.</span> <span class="nav-text">Kafka</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Redis-消息推送"><span class="nav-number">8.5.7.</span> <span class="nav-text">Redis 消息推送</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#ZeroMQ"><span class="nav-number">8.5.8.</span> <span class="nav-text">ZeroMQ</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#定时调度"><span class="nav-number">8.6.</span> <span class="nav-text">定时调度</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#单机定时调度"><span class="nav-number">8.6.1.</span> <span class="nav-text">单机定时调度</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#分布式定时调度"><span class="nav-number">8.6.2.</span> <span class="nav-text">分布式定时调度</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#RPC"><span class="nav-number">8.7.</span> <span class="nav-text">RPC</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Dubbo"><span class="nav-number">8.7.1.</span> <span class="nav-text">Dubbo</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Thrift"><span class="nav-number">8.7.2.</span> <span class="nav-text">Thrift</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#gRPC"><span class="nav-number">8.7.3.</span> <span class="nav-text">gRPC</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#数据库中间件"><span class="nav-number">8.8.</span> <span class="nav-text">数据库中间件</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Sharding-Jdbc"><span class="nav-number">8.8.1.</span> <span class="nav-text">Sharding Jdbc</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#日志系统"><span class="nav-number">8.9.</span> <span class="nav-text">日志系统</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#日志搜集"><span class="nav-number">8.9.1.</span> <span class="nav-text">日志搜集</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#配置中心"><span class="nav-number">8.10.</span> <span class="nav-text">配置中心</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#API-网关"><span class="nav-number">8.11.</span> <span class="nav-text">API 网关</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#网络"><span class="nav-number">9.</span> <span class="nav-text">网络</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#协议"><span class="nav-number">9.1.</span> <span class="nav-text">协议</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#OSI-七层协议"><span class="nav-number">9.1.1.</span> <span class="nav-text">OSI 七层协议</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#TCP-IP"><span class="nav-number">9.1.2.</span> <span class="nav-text">TCP/IP</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#HTTP"><span class="nav-number">9.1.3.</span> <span class="nav-text">HTTP</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#HTTP2-0"><span class="nav-number">9.1.4.</span> <span class="nav-text">HTTP2.0</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#HTTPS"><span class="nav-number">9.1.5.</span> <span class="nav-text">HTTPS</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#网络模型"><span class="nav-number">9.2.</span> <span class="nav-text">网络模型</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Epoll"><span class="nav-number">9.2.1.</span> <span class="nav-text">Epoll</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Java-NIO"><span class="nav-number">9.2.2.</span> <span class="nav-text">Java NIO</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#kqueue"><span class="nav-number">9.2.3.</span> <span class="nav-text">kqueue</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#连接和短连接"><span class="nav-number">9.3.</span> <span class="nav-text">连接和短连接</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#框架"><span class="nav-number">9.4.</span> <span class="nav-text">框架</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#零拷贝（Zero-copy）"><span class="nav-number">9.5.</span> <span class="nav-text">零拷贝（Zero-copy）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#序列化-二进制协议"><span class="nav-number">9.6.</span> <span class="nav-text">序列化(二进制协议)</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Hessian"><span class="nav-number">9.6.1.</span> <span class="nav-text">Hessian</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Protobuf"><span class="nav-number">9.6.2.</span> <span class="nav-text">Protobuf</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#数据库"><span class="nav-number">10.</span> <span class="nav-text">数据库</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#基础理论"><span class="nav-number">10.1.</span> <span class="nav-text">基础理论</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#数据库设计的三大范式"><span class="nav-number">10.1.1.</span> <span class="nav-text">数据库设计的三大范式</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#MySQL"><span class="nav-number">10.2.</span> <span class="nav-text">MySQL</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#原理"><span class="nav-number">10.2.1.</span> <span class="nav-text">原理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#InnoDB"><span class="nav-number">10.2.2.</span> <span class="nav-text">InnoDB</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#优化"><span class="nav-number">10.2.3.</span> <span class="nav-text">优化</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#索引"><span class="nav-number">10.2.4.</span> <span class="nav-text">索引</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#聚集索引-非聚集索引"><span class="nav-number">10.2.4.1.</span> <span class="nav-text">聚集索引, 非聚集索引</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#复合索引"><span class="nav-number">10.2.4.2.</span> <span class="nav-text">复合索引</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#自适应哈希索引-AHI"><span class="nav-number">10.2.4.3.</span> <span class="nav-text">自适应哈希索引(AHI)</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#explain"><span class="nav-number">10.2.5.</span> <span class="nav-text">explain</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#NoSQL"><span class="nav-number">10.3.</span> <span class="nav-text">NoSQL</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#MongoDB"><span class="nav-number">10.3.1.</span> <span class="nav-text">MongoDB</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Hbase"><span class="nav-number">10.3.2.</span> <span class="nav-text">Hbase</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#搜索引擎"><span class="nav-number">11.</span> <span class="nav-text">搜索引擎</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#搜索引擎原理"><span class="nav-number">11.1.</span> <span class="nav-text">搜索引擎原理</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Lucene"><span class="nav-number">11.2.</span> <span class="nav-text">Lucene</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Elasticsearch"><span class="nav-number">11.3.</span> <span class="nav-text">Elasticsearch</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Solr"><span class="nav-number">11.4.</span> <span class="nav-text">Solr</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#sphinx"><span class="nav-number">11.5.</span> <span class="nav-text">sphinx</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#性能"><span class="nav-number">12.</span> <span class="nav-text">性能</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#性能优化方法论"><span class="nav-number">12.1.</span> <span class="nav-text">性能优化方法论</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#容量评估"><span class="nav-number">12.2.</span> <span class="nav-text">容量评估</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#CDN-网络"><span class="nav-number">12.3.</span> <span class="nav-text">CDN 网络</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#连接池"><span class="nav-number">12.4.</span> <span class="nav-text">连接池</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#性能调优"><span class="nav-number">12.5.</span> <span class="nav-text">性能调优</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#大数据"><span class="nav-number">13.</span> <span class="nav-text">大数据</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#流式计算"><span class="nav-number">13.1.</span> <span class="nav-text">流式计算</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Storm"><span class="nav-number">13.1.1.</span> <span class="nav-text">Storm</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Flink"><span class="nav-number">13.1.2.</span> <span class="nav-text">Flink</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Kafka-Stream"><span class="nav-number">13.1.3.</span> <span class="nav-text">Kafka Stream</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#应用场景-1"><span class="nav-number">13.1.4.</span> <span class="nav-text">应用场景</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Hadoop"><span class="nav-number">13.2.</span> <span class="nav-text">Hadoop</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#HDFS"><span class="nav-number">13.2.1.</span> <span class="nav-text">HDFS</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#MapReduce"><span class="nav-number">13.2.2.</span> <span class="nav-text">MapReduce</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Yarn"><span class="nav-number">13.2.3.</span> <span class="nav-text">Yarn</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Spark"><span class="nav-number">13.3.</span> <span class="nav-text">Spark</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#安全"><span class="nav-number">14.</span> <span class="nav-text">安全</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#web-安全"><span class="nav-number">14.1.</span> <span class="nav-text">web 安全</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#XSS"><span class="nav-number">14.1.1.</span> <span class="nav-text">XSS</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#CSRF"><span class="nav-number">14.1.2.</span> <span class="nav-text">CSRF</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#SQL-注入"><span class="nav-number">14.1.3.</span> <span class="nav-text">SQL 注入</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Hash-Dos"><span class="nav-number">14.1.4.</span> <span class="nav-text">Hash Dos</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#脚本注入"><span class="nav-number">14.1.5.</span> <span class="nav-text">脚本注入</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#漏洞扫描工具"><span class="nav-number">14.1.6.</span> <span class="nav-text">漏洞扫描工具</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#验证码"><span class="nav-number">14.1.7.</span> <span class="nav-text">验证码</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#DDoS-防范"><span class="nav-number">14.2.</span> <span class="nav-text">DDoS 防范</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#用户隐私信息保护"><span class="nav-number">14.3.</span> <span class="nav-text">用户隐私信息保护</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#序列化漏洞"><span class="nav-number">14.4.</span> <span class="nav-text">序列化漏洞</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#加密解密"><span class="nav-number">14.5.</span> <span class="nav-text">加密解密</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#对称加密"><span class="nav-number">14.5.1.</span> <span class="nav-text">对称加密</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#哈希算法"><span class="nav-number">14.5.2.</span> <span class="nav-text">哈希算法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#非对称加密"><span class="nav-number">14.5.3.</span> <span class="nav-text">非对称加密</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#服务器安全"><span class="nav-number">14.6.</span> <span class="nav-text">服务器安全</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#数据安全"><span class="nav-number">14.7.</span> <span class="nav-text">数据安全</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#数据备份"><span class="nav-number">14.7.1.</span> <span class="nav-text">数据备份</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#网络隔离"><span class="nav-number">14.8.</span> <span class="nav-text">网络隔离</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#内外网分离"><span class="nav-number">14.8.1.</span> <span class="nav-text">内外网分离</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#登录跳板机"><span class="nav-number">14.8.2.</span> <span class="nav-text">登录跳板机</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#授权、认证"><span class="nav-number">14.9.</span> <span class="nav-text">授权、认证</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#RBAC"><span class="nav-number">14.9.1.</span> <span class="nav-text">RBAC</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#OAuth2-0"><span class="nav-number">14.9.2.</span> <span class="nav-text">OAuth2.0</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#双因素认证（2FA）"><span class="nav-number">14.9.3.</span> <span class="nav-text">双因素认证（2FA）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#单点登录-SSO"><span class="nav-number">14.9.4.</span> <span class="nav-text">单点登录(SSO)</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#常用开源框架"><span class="nav-number">15.</span> <span class="nav-text">常用开源框架</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#开源协议"><span class="nav-number">15.1.</span> <span class="nav-text">开源协议</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#日志框架"><span class="nav-number">15.2.</span> <span class="nav-text">日志框架</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Log4j、Log4j2"><span class="nav-number">15.2.1.</span> <span class="nav-text">Log4j、Log4j2</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Logback"><span class="nav-number">15.2.2.</span> <span class="nav-text">Logback</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#ORM"><span class="nav-number">15.3.</span> <span class="nav-text">ORM</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#网络框架"><span class="nav-number">15.4.</span> <span class="nav-text">网络框架</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Web-框架"><span class="nav-number">15.5.</span> <span class="nav-text">Web 框架</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Spring-家族"><span class="nav-number">15.5.1.</span> <span class="nav-text">Spring 家族</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#工具框架"><span class="nav-number">15.6.</span> <span class="nav-text">工具框架</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#分布式设计"><span class="nav-number">16.</span> <span class="nav-text">分布式设计</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#扩展性设计"><span class="nav-number">16.1.</span> <span class="nav-text">扩展性设计</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#稳定性-amp-高可用"><span class="nav-number">16.2.</span> <span class="nav-text">稳定性 &amp; 高可用</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#硬件负载均衡"><span class="nav-number">16.2.1.</span> <span class="nav-text">硬件负载均衡</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#软件负载均衡"><span class="nav-number">16.2.2.</span> <span class="nav-text">软件负载均衡</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#限流"><span class="nav-number">16.2.3.</span> <span class="nav-text">限流</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#应用层容灾"><span class="nav-number">16.2.4.</span> <span class="nav-text">应用层容灾</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#跨机房容灾"><span class="nav-number">16.2.5.</span> <span class="nav-text">跨机房容灾</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#容灾演练流程"><span class="nav-number">16.2.6.</span> <span class="nav-text">容灾演练流程</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#平滑启动"><span class="nav-number">16.2.7.</span> <span class="nav-text">平滑启动</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#数据库扩展"><span class="nav-number">16.3.</span> <span class="nav-text">数据库扩展</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#读写分离模式"><span class="nav-number">16.3.1.</span> <span class="nav-text">读写分离模式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#分片模式"><span class="nav-number">16.3.2.</span> <span class="nav-text">分片模式</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#服务治理"><span class="nav-number">16.4.</span> <span class="nav-text">服务治理</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#服务注册与发现"><span class="nav-number">16.4.1.</span> <span class="nav-text">服务注册与发现</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#服务路由控制"><span class="nav-number">16.4.2.</span> <span class="nav-text">服务路由控制</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#分布式一致"><span class="nav-number">16.5.</span> <span class="nav-text">分布式一致</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#CAP-与-BASE-理论"><span class="nav-number">16.5.1.</span> <span class="nav-text">CAP 与 BASE 理论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#分布式锁"><span class="nav-number">16.5.2.</span> <span class="nav-text">分布式锁</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#分布式一致性算法"><span class="nav-number">16.5.3.</span> <span class="nav-text">分布式一致性算法</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#PAXOS"><span class="nav-number">16.5.3.1.</span> <span class="nav-text">PAXOS</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Zab"><span class="nav-number">16.5.3.2.</span> <span class="nav-text">Zab</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Raft"><span class="nav-number">16.5.3.3.</span> <span class="nav-text">Raft</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Gossip"><span class="nav-number">16.5.3.4.</span> <span class="nav-text">Gossip</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#两阶段提交、多阶段提交"><span class="nav-number">16.5.3.5.</span> <span class="nav-text">两阶段提交、多阶段提交</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#幂等"><span class="nav-number">16.5.4.</span> <span class="nav-text">幂等</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#分布式一致方案"><span class="nav-number">16.5.5.</span> <span class="nav-text">分布式一致方案</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#分布式-Leader-节点选举"><span class="nav-number">16.5.6.</span> <span class="nav-text">分布式 Leader 节点选举</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#TCC-Try-Confirm-Cancel-柔性事务"><span class="nav-number">16.5.7.</span> <span class="nav-text">TCC(Try/Confirm/Cancel) 柔性事务</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#分布式文件系统"><span class="nav-number">16.6.</span> <span class="nav-text">分布式文件系统</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#唯一ID-生成"><span class="nav-number">16.7.</span> <span class="nav-text">唯一ID 生成</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#全局唯一ID"><span class="nav-number">16.7.1.</span> <span class="nav-text">全局唯一ID</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#一致性Hash算法"><span class="nav-number">16.8.</span> <span class="nav-text">一致性Hash算法</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#设计思想-amp-开发模式"><span class="nav-number">17.</span> <span class="nav-text">设计思想 &amp; 开发模式</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#DDD-Domain-driven-Design-领域驱动设计"><span class="nav-number">17.1.</span> <span class="nav-text">DDD(Domain-driven Design - 领域驱动设计)</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#命令查询职责分离-CQRS"><span class="nav-number">17.1.1.</span> <span class="nav-text">命令查询职责分离(CQRS)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#贫血，充血模型"><span class="nav-number">17.1.2.</span> <span class="nav-text">贫血，充血模型</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Actor-模式"><span class="nav-number">17.2.</span> <span class="nav-text">Actor 模式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#响应式编程"><span class="nav-number">17.3.</span> <span class="nav-text">响应式编程</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Reactor"><span class="nav-number">17.3.1.</span> <span class="nav-text">Reactor</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#RxJava"><span class="nav-number">17.3.2.</span> <span class="nav-text">RxJava</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Vert-x"><span class="nav-number">17.3.3.</span> <span class="nav-text">Vert.x</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#DODAF2-0"><span class="nav-number">17.4.</span> <span class="nav-text">DODAF2.0</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Serverless"><span class="nav-number">17.5.</span> <span class="nav-text">Serverless</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Service-Mesh"><span class="nav-number">17.6.</span> <span class="nav-text">Service Mesh</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#项目管理"><span class="nav-number">18.</span> <span class="nav-text">项目管理</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#架构评审"><span class="nav-number">18.1.</span> <span class="nav-text">架构评审</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#重构"><span class="nav-number">18.2.</span> <span class="nav-text">重构</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#代码规范"><span class="nav-number">18.3.</span> <span class="nav-text">代码规范</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#代码-Review"><span class="nav-number">18.4.</span> <span class="nav-text">代码 Review</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#RUP"><span class="nav-number">18.5.</span> <span class="nav-text">RUP</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#看板管理"><span class="nav-number">18.6.</span> <span class="nav-text">看板管理</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#SCRUM"><span class="nav-number">18.7.</span> <span class="nav-text">SCRUM</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#敏捷开发"><span class="nav-number">18.8.</span> <span class="nav-text">敏捷开发</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#极限编程（XP）"><span class="nav-number">18.9.</span> <span class="nav-text">极限编程（XP）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#结对编程"><span class="nav-number">18.10.</span> <span class="nav-text">结对编程</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#PDCA-循环质量管理"><span class="nav-number">18.11.</span> <span class="nav-text">PDCA 循环质量管理</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#FMEA管理模式"><span class="nav-number">18.12.</span> <span class="nav-text">FMEA管理模式</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#通用业务术语"><span class="nav-number">19.</span> <span class="nav-text">通用业务术语</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#技术趋势"><span class="nav-number">20.</span> <span class="nav-text">技术趋势</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#政策、法规"><span class="nav-number">21.</span> <span class="nav-text">政策、法规</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#法律"><span class="nav-number">21.1.</span> <span class="nav-text">法律</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#严格遵守刑法253法条"><span class="nav-number">21.1.1.</span> <span class="nav-text">严格遵守刑法253法条</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#架构师素质"><span class="nav-number">22.</span> <span class="nav-text">架构师素质</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#团队管理"><span class="nav-number">23.</span> <span class="nav-text">团队管理</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#招聘"><span class="nav-number">23.1.</span> <span class="nav-text">招聘</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#资讯"><span class="nav-number">24.</span> <span class="nav-text">资讯</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#行业资讯"><span class="nav-number">24.1.</span> <span class="nav-text">行业资讯</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#公众号列表"><span class="nav-number">24.2.</span> <span class="nav-text">公众号列表</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#博客"><span class="nav-number">24.3.</span> <span class="nav-text">博客</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#团队博客"><span class="nav-number">24.3.1.</span> <span class="nav-text">团队博客</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#个人博客"><span class="nav-number">24.3.2.</span> <span class="nav-text">个人博客</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#综合门户、社区"><span class="nav-number">24.4.</span> <span class="nav-text">综合门户、社区</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#问答、讨论类社区"><span class="nav-number">24.5.</span> <span class="nav-text">问答、讨论类社区</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#行业数据分析"><span class="nav-number">24.6.</span> <span class="nav-text">行业数据分析</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#专项网站"><span class="nav-number">24.7.</span> <span class="nav-text">专项网站</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#其他类"><span class="nav-number">24.8.</span> <span class="nav-text">其他类</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#推荐参考书"><span class="nav-number">24.9.</span> <span class="nav-text">推荐参考书</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#在线电子书"><span class="nav-number">24.9.1.</span> <span class="nav-text">在线电子书</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#纸质书"><span class="nav-number">24.9.2.</span> <span class="nav-text">纸质书</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#开发方面"><span class="nav-number">24.9.2.1.</span> <span class="nav-text">开发方面</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#架构方面"><span class="nav-number">24.9.2.2.</span> <span class="nav-text">架构方面</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#技术管理方面"><span class="nav-number">24.9.2.3.</span> <span class="nav-text">技术管理方面</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#基础理论-1"><span class="nav-number">24.9.2.4.</span> <span class="nav-text">基础理论</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#工具方面"><span class="nav-number">24.9.2.5.</span> <span class="nav-text">工具方面</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#大数据方面"><span class="nav-number">24.9.2.6.</span> <span class="nav-text">大数据方面</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#技术资源"><span class="nav-number">25.</span> <span class="nav-text">技术资源</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#开源资源"><span class="nav-number">25.1.</span> <span class="nav-text">开源资源</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#手册、文档、教程"><span class="nav-number">25.2.</span> <span class="nav-text">手册、文档、教程</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#在线课堂"><span class="nav-number">25.3.</span> <span class="nav-text">在线课堂</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#会议、活动"><span class="nav-number">25.4.</span> <span class="nav-text">会议、活动</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#常用APP"><span class="nav-number">25.5.</span> <span class="nav-text">常用APP</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#找工作"><span class="nav-number">25.6.</span> <span class="nav-text">找工作</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#工具"><span class="nav-number">25.7.</span> <span class="nav-text">工具</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#代码托管"><span class="nav-number">25.8.</span> <span class="nav-text">代码托管</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#文件服务"><span class="nav-number">25.9.</span> <span class="nav-text">文件服务</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#综合云服务商"><span class="nav-number">25.10.</span> <span class="nav-text">综合云服务商</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#VPS"><span class="nav-number">25.10.1.</span> <span class="nav-text">VPS</span></a></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
         
       </div>
-      <footer id="footer">
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">chen chen</span>
+
   
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      &copy; 2018 chen chen<br>
-      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
-    </div>
-  </div>
-</footer>
-    </div>
-    <nav id="mobile-nav">
+
   
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
+</div>
+
+
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动 v3.7.1</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 – <a class="theme-link" target="_blank" href="https://theme-next.org">NexT.Gemini</a> v6.4.0</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
     
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    
+	
+    
 
-
-  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
-  <script src="/fancybox/jquery.fancybox.pack.js"></script>
-
-
-<script src="/js/script.js"></script>
-
-
-
+    
   </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=6.4.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=6.4.0"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=6.4.0"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=6.4.0"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.4.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.4.0"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.4.0"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
 </body>
 </html>
